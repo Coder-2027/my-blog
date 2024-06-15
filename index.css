@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.pulse {
+  width: 22.4px;
+  height: 22.4px;
+  border-radius: 50%;
+  background: #474bff;
+  box-shadow: 0 0 0 0 rgba(71,75,255,0.5);
+  animation: pulse-c6zlskmd 1s infinite;
+}
+
+@keyframes pulse-c6zlskmd {
+  100% {
+     box-shadow: 0 0 0 33.6px #0000;
+  }
+}
+
+nav{
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-bottom: .05rem solid black;
+  font-family: sans-serif;
+  font-weight: 600;
+  box-shadow: 0 0 20px 0 black;
+}
+
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: .05rem solid black;
+  box-shadow: 0 0 20px 0 black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-content{
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.buttons{
+  display: flex;
+  gap: 1rem;
+}
+
+.btn{
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  border: .05rem solid black;
+  cursor: pointer;
+}
+
+.blog{
+  width: 800px;
+  min-height: 100vh;
+  height: max-content;
+  margin: 0 auto;
+  padding: 6rem 0;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.title{
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: .8rem;
+}
+
+.date{
+  margin-bottom: .8rem;
+}
+
+.content{
+  margin-bottom: 1rem;
+}
+
+.author span{
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tags span{
+  color: rgba(0, 0, 255, 0.604);
+  margin-right: .8rem;
+  cursor: pointer;
+  transition: all .1s  linear;
+}
+
+.tags span:hover{
+  color: rgba(0, 0, 255, 0.904);
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  font-size: 1.5rem;
+  height: 70vh;
+}
